@@ -32,11 +32,13 @@ _Ensures access does not persist beyond its intended purpose._
 - establish just in time access rules
 
 ## 2.3 Privileged Access Management Process
+Defines how accounts are determined to be high-privileged, how to grant privileged access, and how often to audit. Must align with PAM policy, which enforces vaulting just-in-time access.
 ### 2.3.1 Define privileged access eligibility criteria
 ### 2.3.2 Define activation and justification process
 ### 2.3.3 Define privileged access review frequency
 
 ## 2.4 Exceptions and Temporary Access
+The policy on temporary access and exceptions states that granting this type of access must be done on a case-by-case basis. Temporary access may include external users (partners, contractors) and even internal users (requests for certain privileges – if justified and common, may signal the need to adjust permissions across various user groups to accommodate) → See policy
 ### 2.4.1 Define exception criteria and justification requirements
 ### 2.4.2 Define approval and expiration rules
 ### 2.4.3 Define exception review process
