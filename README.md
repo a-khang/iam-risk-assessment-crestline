@@ -1,7 +1,13 @@
 # Identity Security: A learning project
 This project reflects my learnings of IAM and the role it plays in the cybersecurity strategy for organizations. I focus on the basic components of an Identity Security Program:
-- **Identity Governance**: Decision-making frameworks, Organizational Context, Policies, Procedures
-- **Access Management**: 
+- **Identity Governance**
+- **Identity and Access Management**
+
+I will:
+- Define roles and an organization's need for IAM
+- Develop a decision framework for defining base permissions and define cases for changing permissions
+- Document policies and procedures to define processes and rules (for joiner-mover-leaver, just-in-time access elevation, privileged access management, access reviews)
+- Demo procedures and follow policies in Microsoft Entra ID (IAM active directory tool)
 
 ## Overview
 This project documents the design and implementation of Identity Governance and Access Management for a small to mid-sized B2C SaaS organization providing personal analytics to end users. IAM needs to be grounded in facilitating the processes and people underlying the business, just as much as it needs to be grounded in risk. 
@@ -42,5 +48,3 @@ Every deliverable is centred on a fictional business scenario that involves sens
 - Sample access review outputs and decisions  
 - Before and after access states for lifecycle events  
 - Clear mapping from governance rule to Entra control 
-
-<img width="2073" height="1896" alt="IAM_ENTRA_WBS_300dpi" src="https://github.com/user-attachments/assets/82e70806-46ee-44f8-bd3e-bf392fca11f8" />
