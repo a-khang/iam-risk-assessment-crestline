@@ -11,6 +11,12 @@ Goals:
 - Document policies and procedures to define processes and rules (for joiner-mover-leaver, just-in-time access elevation, privileged access management, access reviews)
 - Demo procedures and follow policies in Microsoft Entra ID (IAM active directory tool)
 
+Under a simulated organizational scenario, I will:
+- Define why the organization needs IAM, the risks that IAM will address, and who owns what (IT? HR? Managers? Security?)
+- Establish the access control model, and the considerations for enforcement, exceptions, and change.
+- Document policies, standards (JML, PAM, JIT) and procedures (Exception management, Access Review) to enforce in the IAM operating model.
+- Configure Entra ID and demonstrate policy enforcement, control of privileged access, and procedures.
+
 **Future Ideas**
 - Tracking incidents involving privilege escalation
 - Looking into non-human identities (and Agentic risks)
