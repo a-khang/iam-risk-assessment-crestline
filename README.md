@@ -1,11 +1,13 @@
 # Identity Security: A learning project
 This project reflects my learnings of IAM and the role it plays in the cybersecurity strategy for organizations. I focus on the basic components of an Identity Security Program:
 - **Identity Governance**
-- **Identity and Access Management**
+- **Authentication**
+- **Authorization**
+- **Accounting**
 
 I will:
 - Define roles and an organization's need for IAM
-- Develop a decision framework for defining base permissions and define business cases for adjusting role bases.
+- Develop a decision framework for defining base permissions and define business cases for adjusting role bases. This serves as an artifact which gets assessed in audits
 - Document policies and procedures to define processes and rules (for joiner-mover-leaver, just-in-time access elevation, privileged access management, access reviews)
 - Demo procedures and follow policies in Microsoft Entra ID (IAM active directory tool)
 
