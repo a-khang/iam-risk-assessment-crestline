@@ -5,14 +5,16 @@ This project reflects my learnings of IAM and the role it plays in the cybersecu
 - **Authorization**
 - **Accounting**
 
-I will:
+Goals:
 - Define roles and an organization's need for IAM
-- Develop a decision framework for defining base permissions and define business cases for adjusting role bases. This serves as an artifact which gets assessed in audits
+- Develop a decision framework for defining base permissions, and cases for adjusting those 
 - Document policies and procedures to define processes and rules (for joiner-mover-leaver, just-in-time access elevation, privileged access management, access reviews)
 - Demo procedures and follow policies in Microsoft Entra ID (IAM active directory tool)
 
-**Updates**
-- Feb: These are the things that I wanted to specifically explore, especially from a business view of such a program. For the future, I may add additional demos and writeups exploring CIEM, potentially incident management. 
+**Future Ideas**
+- Tracking incidents involving privilege escalation
+- Looking into non-human identities (and Agentic risks)
+- CIEM
 
 ## Overview
 This project documents the design and implementation of Identity Governance and Access Management for a small to mid-sized B2C SaaS organization providing personal analytics to end users. IAM needs to be grounded in facilitating the processes and people underlying the business, just as much as it needs to be grounded in risk. 
