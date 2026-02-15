@@ -29,11 +29,6 @@ This project defines roles, identity populations, and governance rules before im
 
 Every deliverable is centred on a fictional business scenario that involves sensitive data and various roles.
 
-## Scope
-| In | Out |
-| -- | -- |
-|Organizational/governance artifacts; Documented processes; Entra implementation artifacts|Full Entra IaC; Complex multitenant or hybrid identity scenarios; Deep regulatory compliance mapping|
-
 ## Deliverables
 ### <a href="https://github.com/a-khang/identity_security/blob/main/part1.md/">1. Organizational and governance artifacts</a>
 - Organizational context and business scenario description  
