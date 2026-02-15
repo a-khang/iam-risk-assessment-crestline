@@ -5,29 +5,21 @@ This project reflects my learnings of IAM and the role it plays in the cybersecu
 - **Authorization**
 - **Accounting**
 
-Goals:
-- Define roles and an organization's need for IAM
-- Develop a decision framework for defining base permissions, and cases for adjusting those 
-- Document policies and procedures to define processes and rules (for joiner-mover-leaver, just-in-time access elevation, privileged access management, access reviews)
-- Demo procedures and follow policies in Microsoft Entra ID (IAM active directory tool)
-
 Under a simulated organizational scenario, I will:
 - Define why the organization needs IAM, the risks that IAM will address, and who owns what (IT? HR? Managers? Security?)
 - Establish the access control model, and the considerations for enforcement, exceptions, and change.
 - Document policies, standards (JML, PAM, JIT) and procedures (Exception management, Access Review) to enforce in the IAM operating model.
 - Configure Entra ID and demonstrate policy enforcement, control of privileged access, and procedures.
 
+Goals for learning and growth:
+- Explaining concepts clearly
+- Demonstrate high-level and low-level thinking
+- Be able to "solution" (recommend and justify) and how to design a cybersecurity solution in an organizational context
+
 **Future Ideas**
 - Tracking incidents involving privilege escalation
 - Looking into non-human identities (and Agentic risks)
 - CIEM
-
-## Overview
-This project documents the design and implementation of Identity Governance and Access Management for a small to mid-sized B2C SaaS organization providing personal analytics to end users. IAM needs to be grounded in facilitating the processes and people underlying the business, just as much as it needs to be grounded in risk. 
-
-This project defines roles, identity populations, and governance rules before implementing IAM controls using Microsoft Entra. The focus is on establishing repeatable, mature identity processes such as joiner-mover-leaver lifecycle management, role-based access, privileged access governance, and access reviews. The outcome demonstrates how identity governance decisions are operationalized in Entra to support growth, protect user trust, and reduce identity-related risk.
-
-Every deliverable is centred on a fictional business scenario that involves sensitive data and various roles.
 
 ## Deliverables
 ### <a href="https://github.com/a-khang/identity_security/blob/main/part1.md/">1. Organizational and governance artifacts</a>
