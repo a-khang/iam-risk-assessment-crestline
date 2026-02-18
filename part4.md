@@ -1,17 +1,13 @@
-# 4.0 Evidence of Repeatability
-## 4.1 Group-Based Access Evidence
-### 4.1.1 Capture examples of group-based access enforcement
-### 4.1.2 Validate removal of direct user access
+# khang notes
+when documenting demos, try to configure resources around a problem.
 
-## 4.2 Access Review Evidence
-### 4.2.1 Capture sample access review decisions
-### 4.2.2 Document remediation outcomes
+Good problems will get us to exercise the enforcement of policy or practice a procedure we documented earlier.
 
-##  4.3 Lifecycle Change Evidence
-### 4.3.1 Capture before-and-after access states for joiners
-### 4.3.2 Capture before-and-after access states for movers
-### 4.3.3 Capture before-and-after access states for leavers
+These are mini-scenarios.
 
-## 4.4 Governance-to-Control Mapping
-### 4.4.1 Map IAM policy statements to Entra controls
-### 4.4.2 Validate enforcement consistency
+1. Someone gets hired into the org
+2. Someone transitions from one role to another
+3. Someone leaves the organization
+4. Employees need to have their access reviewed because of concerns around excessive access
+5. Concerning number of access requests; need to determine whether these are benign or malicious;
+6. tbc
