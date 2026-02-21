@@ -1,7 +1,7 @@
-# Entering the Scenario & the Strategic Needs for IAM
+# Strategic Alignment of IAM and Identity Governance
 
-## Background
-Insightra is an 80-person company that develops software products specialized in personal analytics. The platform aggregates user-provided data and behavioral signals to generate individualized insights and recommendations. Originally a team of fewer than 20 employees, Insightra found product-market fit and is now scaling rapidly in response to growing demand. The company raised a $4-8M Seed round to validate its product, followed by a $15-25M Series A to expand engineering, data infrastructure, and go-to-market operations.
+## Enter the scenario
+_Insightra is an 80-person company that develops software products specialized in personal analytics. The platform aggregates user-provided data and behavioral signals to generate individualized insights and recommendations. Originally a team of fewer than 20 employees, Insightra found product-market fit and is now scaling rapidly in response to growing demand. The company raised a $4-8M Seed round to validate its product, followed by a $15-25M Series A to expand engineering, data infrastructure, and go-to-market operations._
 ### Team Growth:
 - To expand service capacity and innovation, they have scaled their teams across software engineering, IT, and R&D.
 - The operations side has also grown their teams across, finance, marketing, sales, and customer service.
@@ -14,25 +14,23 @@ Insightra is an 80-person company that develops software products specialized in
 - Because Insightra handles personal/sensitive data (both internally and as a part of its product), having an enforced system of identity and access processes ensures that the exposure of data (and other resources) are controlled in a secure manner.
 - Secure access should be seamless for internal users. Complexity incentivizes workarounds, which will undermine any IAM strategy that Insightra implements.
 
-## Identity Governance & Developing Access Policy / Procedures
+## Identity Governance and Developing Workflows
+Managing identities and access do not exist in isolation. IAM is better thought of as a cross-functional area itself, with various roles in place to coordinate decisions on how access is provisioned across organizations like Insightra.
+IGA is a mark of maturity as it defines the policies, standards, and procedures for managing identity and access.
 
-### Identity Lifecycle
-#### Joiner
-_Automate the creation of new accounts_
-#### Mover
-_Provide only the access necessary for transitioning between roles_
-#### Leaver
-_Remove access for accounts that no longer need it_
+### Key Deliverables to document
+#### Processes
+_Examples: Joiner, Mover, Leaver_
+- Processes will have triggers, decision logic, and simple RACI.
+- Processes will have defined time constraints, and clauses to handle delays.
+- Evidence generated is attached to processes.
 
-### User Access Reviews
-_curbing the risk of privilege creep_
-### Access Requests
-_A system to manage access requests would provide Insightra with a record of who requested and who approved access, and when it took place_
-1. Access Request
-2. Manager Approval
-3. Access Granted
+#### Approvals
+- Develop a tiered risk model based on categories of sensitivity of access to a particular resource
+- Determine who owns which approval tiers of the model.
+- Ensure that the approval process includes the time constraint (as per just-in-time access).
 
-### Role Management
-
-### Segregation of Duties (P)
-_Ensures that no single role will have complete control over a system or process_
+#### Reviews
+- For each access tier, determine the frequency for holding reviews.
+- Check access against baseline role permissions and requests to validate exemptions. Acquire attestations if necessary.
+- Remove access if it fails previous checks and attestations cannot be validated. 
