@@ -49,6 +49,12 @@ iam-risk-assessment-crestline/
 │   └── jml-future-state.png             # Exported diagram for viewing without draw.io
 │
 └── README.md
+│   └── Methodology
+│   └── Key Findings
+│   └── Controls Referenced
+│   └── Tools Used
+│   └── Limitations
+│   └── Key Learnings
 ```
 
 ---
