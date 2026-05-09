@@ -42,12 +42,9 @@ iam-risk-assessment-crestline/
 │   └── observations-and-inferences.md   # Stage 1 — Structured analysis of implied process gaps and governance failures
 │
 ├── 03_risk-register/
-│   └── risk-register.xlsx               # Stage 2 — Scored risk register with asset, risk, likelihood, impact, owner, status, and control references
+│   └── 03_risk-register.xlsx               # Stage 2 — Scored risk register with asset, risk, likelihood, impact, owner, status, and control references, with Control gap analysis mapped to NIST CSF outcomes and SP 800-53 controls
 │
-├── 04_gap-analysis/
-│   └── gap-analysis-memo.md             # Stage 3 — Control gap analysis mapped to NIST CSF outcomes and SP 800-53 controls
-│
-├── 05_process-map/
+├── 04_process-map/ (IN PROGRESS)
 │   └── jml-future-state.drawio          # Stage 4 — Future-state JML workflow in draw.io with swimlane structure
 │   └── jml-future-state.png             # Exported diagram for viewing without draw.io
 │
