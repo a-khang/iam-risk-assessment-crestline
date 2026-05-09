@@ -108,6 +108,25 @@ A future-state JML workflow was designed in draw.io using swimlanes organized by
 This project is based on a fictional case study designed to surface realistic IAM risks in a mid-size professional services context. Findings and control mappings reflect the information available in the case — no primary research, interviews, or system access were conducted. Control citations are scoped to gaps with sufficient evidentiary basis in the case material; gaps that could not be supported by specific case evidence were excluded.
 
 ---
+## Key Learnings
+
+### 1. Security as a business alignment problem
+The most important reframe from this project is that cybersecurity is not a technology problem with business consequences — it is a business problem that technology partially addresses. At Crestline, the most significant IAM failures were not technical. They were organizational: unclear ownership, informal processes, and a cultural assumption that security would resolve itself through Marcus. No tool or platform change fixes that without first addressing the structural conditions that produced it.
+This shifts the analyst's job from identifying technical gaps to finding alignment between what the business needs to operate and what security requires to protect those operations. Balance implies a trade-off — giving something up on one side to gain on the other. Alignment means finding the framing where business and security requirements point in the same direction. In this project, that alignment was visible in the vendor assessment finding: passing a client assessment is both a commercial imperative and a security improvement. Framed correctly, security investment is business protection, not overhead.
+
+### 2. Surface problems vs. discrete problems
+A surface problem is what an organization describes when asked what is wrong. A discrete problem is what the analysis reveals when the description is interrogated carefully. The gap between them is where findings live.
+At Crestline, the surface problem is that offboarding is informal. The discrete problems are that offboarding scope is limited to Microsoft 365, that no checklist exists to enforce consistency, that partner departures bypass IT entirely, and that the completion of offboarding is never verified across downstream SaaS platforms. Each of those is a separate finding with a separate control mapping and a separate remediation path. Treating them as one problem produces one vague recommendation. Treating them as four discrete problems produces four actionable entries.
+The method that makes this possible is guiding questions applied before conclusions are drawn. Questions like "where does a process description end and an assumption begin?" and "what happens in the gaps between handoffs?" force the analysis below the surface before anything is written down. **It takes discipline and experience is resisting the instinct to name the problem before the questions have been fully worked through.**
+
+### 3. Navigating NIST CSF and SP 800-53
+
+The frameworks are not difficult to understand individually. The difficulty is in the cross-referencing — moving between CSF outcomes and 800-53 controls without losing the thread of the original risk. Several hours of this project were spent going back and forth across spreadsheets, which introduced the risk of missing controls or misdiagnosing the fit between a risk and its reference.
+The lesson is that the mapping should be built as a personal reference before the gap analysis is written, not discovered during it. A simple pre-built table — CSF outcome on one axis, relevant 800-53 control family on the other, with plain-language descriptions of what each control requires — would have significantly reduced navigation time and the probability of overcitation or missed controls.
+A second lesson is that scoping the risk register before beginning the gap analysis is not optional. An unscoped register produces entries that are too broad to map cleanly to any control. The specificity of each risk description directly determines the precision of the control citation. Vague risks produce vague mappings; discrete risks produce defensible ones.
+The most transferable skill from this exercise is not knowledge of any specific control. It is the ability to read a risk scenario, identify what organizational behavior is absent, and trace that absence to the control that would require it. Chaining the process from observation to risk to gap to control is how I'd imagine a GRC analyst would work.
+
+---
 
 ## About
 
