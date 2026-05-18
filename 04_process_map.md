@@ -23,6 +23,10 @@ The proposed processes below reflect the scope of issues found in the CrestLine 
 * Privileged Access Management
    * Unsure of what process needs to be captured here, but would definitely be written into a requirement for both IT staff, de facto or official system administrators, and Project Leads
  
-## Findings and Questions
+## Considerations
+* SSO integration across Crestline's SaaS via identity provider (ideally Microsoft Entra ID) would close gaps in revocation because accounts would be managed from a single platform. An account can be disabled which would suspend access across integrated systems immedietely. SSO support becomes a key requirement for IT solutions, whether they are built in-house or acquired off-shelf.
+* A key issue highlighted in the case is remote access, which is very common among Crestline's consultants. While the scope of this project focused more on IAM process-related issues, remote access could be managed with ABAC (eg. time-based access) and detective controls.
+
+## Questions
 * Would user self-service for identities be feasible in an organization that moves fast and cannot easily afford more IT friction?
 * Would stronger IT governance better orchestrate IT priorities in Crestline? Would the outcomes benefit IT operations, resources, business strategy alignment, or all?
