@@ -3,18 +3,30 @@
 ## Process Scope
 The proposed processes below reflect the scope of issues found in the CrestLine case.
 
-* Joiners:
-   * Role-based assignments for new employees
-  
-* Movers:
-   * Responsive Role Transfers and Access Requests (IT must respond promptly to access requests)
-   * End-to-end Role Transfer validation (HR and IT changes must coincide before being written down officially into books - A ticketing system would help to track the status of role transfers for greater transparency)
-
-* Leavers:
-   * Project Site Closures in SharePoint
-   * Employee Departures
-   * Partner Departure
+### Joiners:
+J1: **Role-based assignments for new employees**
  
+<img width="1431" height="832" alt="image" src="https://github.com/user-attachments/assets/daff6435-c481-4c1f-8172-ad3ebd49f746" />
+
+A major change proposed in this process is the inclusion of role-based profiles, which are predefined lists of resources that an employee must be able to access with respect to their role. It is the hiring manager's onus to determine a profile fits the new employee, or to initiate a consultation with Marcus who is more security-oriented. 
+  
+---
+
+### Movers:
+M1: **Responsive Role Transfers and Access Requests (IT must respond promptly to access requests)**
+
+M2: **End-to-end Role Transfer validation** 
+- (HR and IT changes must coincide before being written down officially into books - A ticketing system would help to track the status of role transfers for greater transparency)
+
+---
+### Leavers:
+L1: **Project Site Closures in SharePoint**
+
+L2: **Employee Departures**
+
+L3: **Partner Departure**
+
+--- 
 * Identity Governance:
    * Temporary Access Management for Contractors, Temps, other external identities
    * Routine Access Reviews, not adhoc access reviews; Scope extends to departed identities to determine whether orphaned accounts exist
