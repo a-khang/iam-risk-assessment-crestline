@@ -6,10 +6,9 @@ The proposed processes below reflect the scope of issues found in the CrestLine 
 ### Joiners:
 J1: **Role-based assignments for new employees**
  
-<img width="1431" height="832" alt="image" src="https://github.com/user-attachments/assets/daff6435-c481-4c1f-8172-ad3ebd49f746" />
+<img width="1741" height="961" alt="image" src="https://github.com/user-attachments/assets/34d2bacc-5a2b-4956-9b93-87ba1661ba7e" />
 
-A major change proposed in this process is the inclusion of role-based profiles, which are predefined lists of resources that an employee must be able to access with respect to their role. It is the hiring manager's onus to determine a profile fits the new employee, or to initiate a consultation with Marcus who is more security-oriented. 
-  
+- Provisioning tickets act as the key audit trail
 ---
 
 ### Movers:
