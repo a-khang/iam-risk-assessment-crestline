@@ -1,13 +1,8 @@
 # IAM Risk Assessment & Process Design
-**Crestline Advisory Group | Independent Portfolio Project**
-
----
 
 ## Overview
 
-This project simulates an end-to-end identity and access management (IAM) risk assessment for a fictional 90-person management consulting firm operating in the Microsoft 365 ecosystem. It was designed to practice GRC methodology — moving from organizational observation through risk identification, control gap analysis, and future-state process design.
-
-The assessment follows a four-stage analytical workflow, each stage building directly on the last. All findings, risk entries, and control mappings are grounded in a fictional case study developed for this purpose.
+This project simulates an end-to-end identity and access management (IAM) risk assessment for a fictional 90-person management consulting firm operating in the Microsoft 365 ecosystem. The goal is to perform some GRC work: identifying issues, framing risks, defining controls, and redesigning processes.
 
 ---
 
@@ -61,17 +56,40 @@ iam-risk-assessment-crestline/
 
 ## Methodology
 
-### Stage 1 — Observations & Inferences
-The case study was read as an analyst rather than a student — identifying where process descriptions end and assumptions begin, where accountability transfers between groups without clear ownership, and which user populations fall outside standard workflows. Findings were organized into four themes: fragmented access governance, lifecycle process gaps, accumulated and unreviewed access, and visibility and accountability gaps.
+### Stage 1: Observations & Inferences
+Case analysis was performed to identify administrative processes and determine:
+- where descriptions end and assumptions begin
+- where accountability transfers between groups without clear ownership
+- which user populations fall outside standard workflows.
 
-### Stage 2 — Risk Register
-Observations were formalized into nine risk entries across six asset categories: client intellectual property, financial records, systems, reputational trust, contractual standing, and operational integrity. Each entry includes a threat scenario grounded in the case, a likelihood and impact score on a 3x3 matrix with written rationale, an IAM risk category, an assigned owner by role, a remediation status, and mapped CSF outcomes and 800-53 controls.
+Findings were organized into four themes: fragmented access governance, lifecycle process gaps, accumulated and unreviewed access, and visibility and accountability gaps.
 
-### Stage 3 — Gap Analysis
-Each risk register entry was mapped to one or more NIST CSF 2.0 outcome subcategories (primarily GV.RR, GV.PO, GV.OC, and PR.AA) and corresponding SP 800-53 Rev. 5 controls across the AC and PM families. Control citations were scoped to entries where the case provides sufficient evidentiary basis — overcitation was treated as a credibility problem, not a thoroughness signal.
+### Stage 2: Risk Register
+Observations were formalized into nine risk entries across six asset categories:
+- client intellectual property
+- financial records, systems
+- reputational trust
+- contractual standing
+- operational integrity.
 
-### Stage 4 — Process Design
-A future-state JML workflow was designed in draw.io using swimlanes organized by organizational group (HR, IT/Security, Hiring Manager). Every process step is traceable to a specific gap identified in Stage 3. Trigger events, approval gates, and verification steps are explicitly represented. Non-standard populations — contractors, acquired employees, and departing partners — are handled as named branches rather than footnotes.
+Each entry includes a threat scenario grounded in the case, a likelihood and impact score on a 3x3 matrix with written rationale, an IAM risk category, an assigned owner by role, a remediation status, and mapped CSF outcomes and 800-53 controls.
+
+### Stage 3: Gap Analysis
+Each risk register entry was mapped to one or more NIST CSF 2.0 outcome subcategories (primarily GV.RR, GV.PO, GV.OC, and PR.AA) and corresponding SP 800-53 Rev. 5 controls across the AC and PM families. 
+
+Control citations were scoped to entries where the case provides sufficient evidence. I was cautious of digging too deep into specific control gaps and NIST citations because that would be disingenous given the limitations of evidence and heavy reliance on assumptions.
+
+### Stage 4: Action Plan and Process Design
+
+Issues were organized into buckets for "two birds: one stone" resolution.
+
+- Governance and Accountability
+- Identity / User Access Lifecycle
+- Project Access Lifecycle
+- Privileged Access
+- Access Reviews and Visibility
+
+Some buckets would be addressed via processs mapping. I initially wanted to use draw.io for anything that touched on access administration but found that diagramming in BPMN tended to be very meticulous and messy at the same time. I settled on using a spreadsheet software to convey lanes and inputs/outputs.
 
 ---
 
@@ -102,8 +120,6 @@ A future-state JML workflow was designed in draw.io using swimlanes organized by
 ## Tools Used
 
 - **Microsoft Excel** — Risk register construction and scoring
-- **draw.io** — Future-state JML process mapping
-- **Markdown** — Case study, observations, gap analysis memo, and documentation
 - **NIST CSF 2.0 Reference Tool** — CSF outcome mapping
 - **NIST SP 800-53 Rev. 5** — Control family reference
 
@@ -135,5 +151,3 @@ The most transferable skill from this exercise is not knowledge of any specific 
 ---
 
 ## About
-
-Developed independently as a portfolio project during a career transition toward cybersecurity GRC and consulting. The author is a Business Technology Management student at the UBC Sauder School of Business holding a CompTIA Security+ certification.
