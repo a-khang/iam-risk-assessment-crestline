@@ -11,24 +11,27 @@ The following observations are drawn from a close reading of Crestline Advisory 
 
 ## 1. Fragmented Access Governance
 
-Access decision-making at Crestline is distributed across multiple groups without clear ownership, consistent criteria, or a security function to provide oversight.
+No policy governs how access is requested, approved, or revoked. Security accountability is informally concentrated in Marcus without the authority, mandate, or visibility to enforce standards across a decentralized environment. Since Marcus does not directly interface with leadership, IT issues like security are only viewed from an operational lens, which leaves a major blind spot for access risks culminating into contractual/legal issues (among other security problems).
 
-For standard onboarding, access is determined by the hiring manager, who communicates requirements to IT verbally or via Teams chat. No role-based access model is described, which means there is no defined baseline of what access a given role should carry. Whether a hiring manager has the awareness to request only what is necessary — and nothing more — is an assumption the process makes without validating. IT implements what it is told; there is no evidence that Marcus reviews or challenges access requests on security grounds.
-
-Within Microsoft 365, SharePoint project site membership is managed by project leads rather than IT. This represents a delegation of access control to individuals who are not accountable for security outcomes and are unlikely to apply consistent standards. The case does not suggest that project leads receive guidance on access management principles or that their decisions are reviewed.
-
-For several SaaS platforms, administrative access is held by the application's primary business owner rather than IT. This means access control within those systems — including who can grant, modify, or revoke access — sits with individuals whose primary accountability is operational, not security-oriented.
-
-The IT Manager, Marcus, is the de facto security function at Crestline. He is the primary SaaS administrator and the person to whom security-related client inquiries are escalated. However, the case does not establish that Marcus is consistently consulted in provisioning decisions, nor that he has the capacity or authority to enforce access standards across a decentralized environment. When access-related failures occur, accountability will likely fall on Marcus regardless of whether the decisions that caused them were his to make.
+Marcus might not have the power or trust to enforce security policies consistently, and it can be well assumed that there isn't a standard method for access decisions across HR, IT, project leads, and SaaS owners.
 
 ---
 
 ## 2. Lifecycle Process Gaps
 
-The joiner, mover, and leaver processes at Crestline share a common weakness: they are narrowly scoped, informally triggered, and not consistently executed across the full range of systems and user populations.
+The joiner, mover, and leaver processes at Crestline exhibit several weaknesses: 
+- Verbal provisioning requests lack standardization and auditability
+- Role-based access baselines undefined at onboarding
+- Mover process recorded in HR but not operationalized in IT
+- Residual access from prior roles never formally revoked
+- Leaver process scoped to M365 only — downstream SaaS platforms unaddressed
+- Partner departures bypass IT entirely
+- Contractor and temporary staff have no defined offboarding trigger
 
 **Joiner**
-Onboarding is initiated when HR emails IT with basic employee information. A second trigger — the hiring manager's verbal access request — is required before IT can complete provisioning. The case does not describe what prompts the hiring manager to make this request, or how quickly it occurs relative to the employee's start date. This introduces latency risk and creates a dependency on informal coordination. Consultants onboarded directly into active engagements receive SharePoint project site access granted by their project lead, outside of any IT-managed process.
+Onboarding is initiated when HR emails IT with basic employee information. A second trigger (the hiring manager's verbal access request) is required before IT can complete provisioning. The case does not describe what prompts the hiring manager to make this request, or how quickly it occurs relative to the employee's start date. This introduces latency risk and creates a dependency on informal coordination. 
+
+Consultants onboarded directly into active engagements receive SharePoint project site access granted by their project lead, outside of any IT-managed process.
 
 **Mover**
 Role changes and internal transfers are recorded in BambooHR, but IT is only notified if the hiring manager proactively reaches out. The case acknowledges this does not always happen promptly. Two consequences follow: access appropriate to the new role may be delayed, and access tied to the previous role may never be removed. The case does not describe any mechanism for reviewing or revoking prior access when a consultant's responsibilities change. Over time, and given Crestline's pattern of cross-practice collaboration, individual consultants are likely to accumulate access well beyond what their current role requires.
@@ -52,6 +55,11 @@ The case notes that during Marcus's extended leave, administrative access to sev
 
 Two employees from a 2022 acquisition were provisioned under legacy naming conventions before migration. One of these individuals departed eight months ago. Given the informality of Crestline's offboarding process and the non-standard account structure, it is not clear that this individual's access was comprehensively revoked across all platforms.
 
+This issue also touches on project lifecycles, which is governed by project leads and entirely outside the scope of IT governance. The issue isn't decentralization per se, as the firm requires a lot of operational flexibility to deliver services to clients without burdening IT. Instead, the issue is a lack of governance that makes this strategy secure.
+- Individual-level site permissions unmanageable at scale: Leads to inconsistencies in provisioning individual access to consultants, instead of using group-based access model.
+- Project leads hold owner-level access without defined responsibilities or best practice guidance
+- Site membership not revoked at engagement closeout: Archiving does affect read- and write-level access, but does address owner access. Archived sites retain confidential client data indefinitely with no retention policy, and if an owner can freely access project resources after the end of an engagement, that's considered orphaned access.
+
 Crestline's last comprehensive access review was conducted approximately 14 months ago, in response to a client vendor assessment. No periodic review cadence is described, meaning the current access state has accumulated for over a year without a structured reconciliation against current roles and employment status.
 
 ---
@@ -67,7 +75,3 @@ The populations most likely to generate orphaned or excessive access — junior 
 Project leads who manage SharePoint membership are not described as having any security awareness, training, or accountability for their access decisions. Their primary frame of reference is project delivery, not information security. The assumption that they will apply least-privilege principles or conduct access reviews at engagement closeout is not supported by anything in the case.
 
 The practical consequence is that Marcus absorbs security accountability for outcomes that result from decisions made entirely outside his involvement. This is not sustainable, and it means that when a control fails — a terminated employee accessing a project site, a compromised shared admin credential, a client data exposure — the root cause will be structural rather than individual, but the visibility to identify that in advance does not currently exist.
-
----
-
-*This writeup informs the risk register developed in Stage 2. Each theme above maps to one or more IAM risk categories: orphaned accounts, excessive privilege, shared credentials, inadequate offboarding, absence of access reviews, and informal provisioning.*
