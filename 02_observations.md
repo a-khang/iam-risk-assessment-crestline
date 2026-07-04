@@ -89,6 +89,10 @@ Project leads who manage SharePoint membership are not described as having any s
 
 ### Potential Consequences
 
-Access continues to accumulate without systemic reconciliation against current roles and employment status, leading to more excessive, dormant, and orphaned access. Departed employees, acquired firm staff, and contractors not consistently captured in review scope. Worse yet, there is no preiodic review cadence, and as a reactive measure triggered by client assessments rather than proactive internal governance. 
+Access continues to accumulate without systemic reconciliation against current roles and employment status, leading to more excessive, dormant, and orphaned access. Departed employees, acquired firm staff, and contractors not consistently captured in review scope. Worse yet, there is no preiodic review cadence, and as a reactive measure triggered by client assessments rather than proactive internal governance.
 
 Visibility and assurance to carry out security must hold leadership accountable, IT managers and resource owners responsible, and all levels employees involved. But these sort of scenarios unfortunately pin Marcus for sole liability given the nature of IT governance within Crestline, even if he is not empowered to lead security and compliance in he firm (sometimes you'd attribute this to constant IT firefighting which prevents coordination and collaboration).
+
+IAM risks are detailed in Part 3, but they include:
+- Non-compliance to information security requirements outlined in contracts/regulations -> Penalties
+- Excessive privileges -> Increased exposure to threats of unauthorized access / data breach
